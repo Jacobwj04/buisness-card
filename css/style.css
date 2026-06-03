@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sand: #DFD2AF;
+    --terracotta: #C26D50;
+    --cream: #F7F4EB;
+    --ink: #2D2D2D;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background: linear-gradient(160deg, var(--sand), #cdbd92);
+    font-family: "Merriweather", serif;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+}
+
+.card {
+    width: 100%;
+    max-width: 23rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--cream);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 3rem rgba(45, 45, 45, .25);
+}
+
+.card__figure {
+    width: 100%;
+    height: 8rem;
+    background: var(--terracotta);
+    display: flex;
+    justify-content: center;
+}
+
+.card__img {
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .35rem solid var(--cream);
+    transform: translateY(50%);
+    box-shadow: 0 .5rem 1rem rgba(45, 45, 45, .2);
+}
+
+.card__header {
+    padding: 6.5rem 1.5rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.card__title {
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: var(--terracotta);
+}
+
+.card__description {
+    font-size: .95rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.card__contact {
+    margin-top: 1.5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__link {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+    padding: .9rem .25rem;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: .95rem;
+    border-top: 1px solid rgba(45, 45, 45, .12);
+    transition: color .2s ease;
+}
+
+.card__link:last-child {
+    border-bottom: 1px solid rgba(45, 45, 45, .12);
+}
+
+.card__link:hover,
+.card__link:active {
+    color: var(--terracotta);
+}
+
+.card__icon {
+    flex-shrink: 0;
+    width: 1.35rem;
+    height: 1.35rem;
+    fill: var(--terracotta);
+}
+
+.card__icon--light {
+    fill: var(--cream);
+}
+
+.card__link-text {
+    word-break: break-word;
+}
+
+.card__cta {
+    margin-top: auto;
+    padding: 1.75rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .65rem;
+}
+
+.card__button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    padding: .95rem 1.25rem;
+    background: var(--terracotta);
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 999px;
+    box-shadow: 0 .5rem 1rem rgba(194, 109, 80, .35);
+    transition: transform .15s ease, box-shadow .2s ease;
+}
+
+.card__button:hover,
+.card__button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .65rem 1.25rem rgba(194, 109, 80, .45);
+}
+
+.card__badge {
+    font-size: .75rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    opacity: .8;
+}
