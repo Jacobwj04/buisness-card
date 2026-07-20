@@ -404,15 +404,9 @@ body {
     }
 
     .hero__collage--item--figure{
-        min-height: 14rem;
-    }
-
-    .hero__collage--item:first-child{
-        transform: none;
-    }
-
-    .hero__collage--item:last-child{
-        transform: none;
+        aspect-ratio: 210 / 297;
+        height: auto;
+        min-height: unset;
     }
 
     /* About */
