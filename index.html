@@ -40,24 +40,32 @@
     </section>
     </nav>
     <header class="hero">
-    <ul class="hero__collage">
-        <li class="hero__collage--item">
-            <figure class="hero__collage--item--figure">
-                <img src="https://placehold.co/800x400" alt="" class="hero__collage--item--img">
-            </figure>
-            <figure class="hero__collage--item--figure">
-                <img src="https://placehold.co/800x400" alt="" class="hero__collage--item--img">
-            </figure>
-        </li>
-        <li class="hero__collage--item">
-            <figure class="hero__collage--item--figure">
-                <img src="https://placehold.co/800x400" alt="" class="hero__collage--item--img">
-            </figure>
-            <figure class="hero__collage--item--figure">
-                <img src="https://placehold.co/800x400" alt="" class="hero__collage--item--img">
-            </figure>
-        </li>
-    </ul>
+    <div class="hero__slider">
+        <ul class="hero__slider--track">
+            <li class="hero__slider--slide">
+                <figure class="hero__slider--figure">
+                    <img src="./img/reiki%20level%201-1.webp" alt="" class="hero__slider--img">
+                </figure>
+            </li>
+            <li class="hero__slider--slide">
+                <figure class="hero__slider--figure">
+                    <img src="./img/reiki%20level%201-2.webp" alt="" class="hero__slider--img">
+                </figure>
+            </li>
+        </ul>
+        <ul class="hero__slider--track hero__slider--track--reverse">
+            <li class="hero__slider--slide">
+                <figure class="hero__slider--figure">
+                    <img src="./img/reiki%20level%202-1.webp" alt="" class="hero__slider--img">
+                </figure>
+            </li>
+            <li class="hero__slider--slide">
+                <figure class="hero__slider--figure">
+                    <img src="./img/reiki%20level%202-2.webp" alt="" class="hero__slider--img">
+                </figure>
+            </li>
+        </ul>
+    </div>
     <section class="hero__text">
         <h1 class="hero__title">Jennie Wassall-Jamieson</h1>
         <p class="hero__description">Creative director & Energy practitioner</p>
@@ -91,5 +99,6 @@
         <span class="card__link-text">jennie@maisonjene.com</span>
     </a>
     </footer>
+    <script src="js/slider.js" defer></script>
 </body>
 </html>
