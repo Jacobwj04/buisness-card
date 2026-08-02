@@ -319,7 +319,68 @@ body {
     fill: var(--cream);
 }
 
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 1440px;
+}
 
+.testimonials--list{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    list-style: none;
+}
+
+.testimonial--item{
+    background: var(--cream);
+    border-radius: .5rem;
+    display: grid;
+    flex-direction: column;
+    gap: .5rem;
+    overflow: hidden;
+    border: 1px solid var(--sand);
+    flex-grow: 1;
+    align-content: space-between;
+    transition: transform .3s ease;
+}
+
+.testimonial--item:hover{
+    transform: translateY(-.5rem) scale(1.025);
+}
+
+.testimonial--text{
+    font-size: 1rem;
+    padding: .5rem;
+    color: var(--ink);
+    text-align: center;
+}
+
+.testimonial--footer{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--terracotta);
+    height: 2.25rem;
+    padding: 0 .5rem;
+}
+
+.testimonial--author{
+    color: var(--cream);
+    font-size: 1rem;
+    font-family: 'Bad Script', cursive;
+}
+
+.testimonial--location{
+    color: var(--cream);
+    font-size: 1rem;
+    font-family: 'Bad Script', cursive;
+}
 
 /* Nav menu — mobile-only dropdown, hidden on desktop */
 .nav__menu{
