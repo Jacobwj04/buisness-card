@@ -329,13 +329,17 @@ body {
 }
 
 .testimonials--list{
-    display: grid;
+    display: flex;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
 }
 
 .testimonial--item{
+    max-width: 20rem;
+    flex-grow: 1;
+    width: 100%;
     background: var(--cream);
     border-radius: .5rem;
     display: grid;
